@@ -10,34 +10,41 @@ param
 [Parameter(ValueFromPipeline=$true)]
 $params
 )
- 
-
-    $folderPath = ''
-    $i = $true;
-
-
-    $params | %{
+     
+    if ($params.length -gt 0) {
+    
+        $folderPath = New-TemporaryDirectory
+        cd $folderpath
         
-        $file = $_
-        if (IsNull($file)-neq) {
-
-            if ($i)
+        git init
+    
+        For ($i=0; $i -lt $params.length; $ii) 
+        {
+        $params[$i]
+        $file = $params[$i]
+        $file
+    
+            if (IsNull($file)) 
             {
-                $folderPath = New-TemporaryDirectory
-                cd $folderpath
-                git init
+
             }
-
-            Copy-Item $file -Destination $folderPath
-
+            else
+            {
             
-            $message = "$file.fullName $file.creationdate $file.modificationDate $file.size"
+                Copy-Item $file -Destination $folderPath
+                      
+                $message = "$file.fullName $file.creationdate $file.modificationDate $file.size"
+                $message
 
-            git commit $message
-            $i = $false
+                git commit $message
+                
+            }
         }
+        ii $folderPath
+    
+    
     }
-
+    
 }
 
-"D:\Project Shelf\PowerShellProjectFolder\Todo\GeneralSourceCompare\fileList.txt" | Get-Content | GitCommitEach 
+Get-Content "D:\Project Shelf\PowerShellProjectFolder\Todo\GeneralSourceCompare\fileList.txt" | GitCommitEach 
