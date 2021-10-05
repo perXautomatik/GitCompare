@@ -20,15 +20,11 @@ $params
     
         For ($i=0; $i -lt $params.length; $ii) 
         {
-        $params[$i]
+        
         $file = $params[$i]
-        $file
+        
     
-            if (IsNull($file)) 
-            {
-
-            }
-            else
+            If( Test-Path -Path $file )
             {
             
                 Copy-Item $file -Destination $folderPath
@@ -39,12 +35,20 @@ $params
                 git commit $message
                 
             }
+            else {
+                $file
+            }
         }
         ii $folderPath
     
     
     }
+    else {
+        $params
+        }
     
 }
 
-Get-Content "D:\Project Shelf\PowerShellProjectFolder\Todo\GeneralSourceCompare\fileList.txt" | GitCommitEach 
+
+$csv = import-csv "D:\Project Shelf\PowerShellProjectFolder\Todo\GeneralSourceCompare\fileList.txt" -raw 
+$csv | GitCommitEach 
