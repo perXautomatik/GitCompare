@@ -32,10 +32,11 @@ $params
                 $fileMeta = (Get-ChildItem $file)      
                 git add $fileMeta.Name
 
-                $message = '$fileMeta.FullName $file.CreationTime $file.LastWriteTime'
-                $message
+                $message = $fileMeta.FullName + " " 
+                $message = $message + $file.CreationTime 
+                $message = $message + $file.LastWriteTime
 
-                git commit $message
+                git commit -m $message
                 
             }
             else {
