@@ -33,13 +33,13 @@ $params
                 git add $fileMeta.Name
 
                 $message = $fileMeta.FullName + " " 
-                $message = $message + $file.CreationTime 
-                $message = $message + $file.LastWriteTime
+                $message = $message + $fileMeta.CreationTime  + " "
+                $message = $message + $fileMeta.LastWriteTime
                 git commit -m $message 
                 try{
                 $hash = ""
                 $hash =  (Get-FileHash $file).hash
-                $hash = "$hash"         # $hash = $hash.SubString(0,140)
+                $hash = "$hash"      
                 
                 git tag -a $hash -m $i
                 }
