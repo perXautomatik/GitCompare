@@ -35,8 +35,12 @@ $params
                 $message = $fileMeta.FullName + " " 
                 $message = $message + $file.CreationTime 
                 $message = $message + $file.LastWriteTime
-
-                git commit -m $message
+                $hash =  (Get-FileHash $file | Select-Object -Property hash)
+                $hash
+                git commit -m $message 
+                git tag -a $i -m $hash
+                
+                
                 
             }
             else {
