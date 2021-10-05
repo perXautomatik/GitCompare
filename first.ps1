@@ -11,18 +11,21 @@ param
 $params
 )
      
-    if ($params.length -gt 0) {
+    if ($params.count -gt 0) {
     
         $folderPath = New-TemporaryDirectory
         cd $folderpath
         
         git init
-    
-        For ($i=0; $i -lt $params.length; $ii) 
-        {
         
+        $params.count
+        $params.length
+        $params.GetType().Name
+
+        #$params | %{
+        For ($i=0; $i -lt $params.length; $ii){
         $file = $params[$i]
-        
+        #$file = $_
     
             If( Test-Path -Path $file )
             {
@@ -36,6 +39,7 @@ $params
                 
             }
             else {
+                "error" 
                 $file
             }
         }
@@ -44,11 +48,19 @@ $params
     
     }
     else {
+        "emptyParams"
+        
+        $params[0];
+        "<>"
+        $params[1]
+        "<>"
         $params
         }
     
 }
 
 
-$csv = import-csv "D:\Project Shelf\PowerShellProjectFolder\Todo\GeneralSourceCompare\fileList.txt" -raw 
-$csv | GitCommitEach 
+$csv = get-content -path "D:\Project Shelf\PowerShellProjectFolder\Todo\GeneralSourceCompare\fileList.txt" #-raw
+#$csv = import-csv "D:\Project Shelf\PowerShellProjectFolder\Todo\GeneralSourceCompare\fileList.txt"
+$csv | %{(get-item -literalpath $_)} | GitCommitEach 
+
