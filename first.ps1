@@ -35,11 +35,19 @@ $params
                 $message = $fileMeta.FullName + " " 
                 $message = $message + $file.CreationTime 
                 $message = $message + $file.LastWriteTime
-                $hash =  (Get-FileHash $file | Select-Object -Property hash)
-                $hash
                 git commit -m $message 
-                git tag -a $i -m $hash
+                try{
+                $hash = ""
+                $hash =  (Get-FileHash $file).hash
+                $hash = "$hash"         # $hash = $hash.SubString(0,140)
                 
+                git tag -a $hash -m $i
+                }
+                catch
+                {
+                 $hash
+                    $hash.GetType().Name
+                }
                 
                 
             }
