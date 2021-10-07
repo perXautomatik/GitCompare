@@ -1,15 +1,62 @@
-D:\Documents\WindowsPowerShell\Scripts\Microsoft.PowerShellISE_profile.ps1
-D:\Documents\WindowsPowerShell\Scripts\TodoProjects\Microsoft.PowerShellISE_profile (2).ps1
-D:\OnGithub\powershell\forked-pshell\profile.ps1
-C:\Users\crbk01\Desktop\OnGithub\powershell\forked-pshell\profile.ps1
-C:\Users\Administratör\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
-C:\Windows\SysWOW64\WindowsPowerShell\v1.0\Examples\profile.ps1
-C:\Windows\System32\WindowsPowerShell\v1.0\Examples\profile.ps1
-C:\Windows\WinSxS\wow64_microsoft.windows.powershell.common_31bf3856ad364e35_10.0.19041.1_none_f125082deef76556\profile.ps1
-C:\Windows\WinSxS\amd64_microsoft.windows.powershell.common_31bf3856ad364e35_10.0.19041.1_none_e6d05ddbba96a35b\profile.ps1
-C:\Windows\WinSxS\amd64_microsoft-windows-appsdiagnostic_31bf3856ad364e35_10.0.19041.1_none_909aa2855af297d4\RS_TemporaryProfile.ps1
-C:\Windows\diagnostics\system\Apps\RS_TemporaryProfile.ps1
-C:\Windows\WinSxS\amd64_microsoft-windows-appsdiagnostic_31bf3856ad364e35_10.0.19041.1_none_909aa2855af297d4\RC_TemporaryProfile.ps1
-C:\Windows\diagnostics\system\Apps\RC_TemporaryProfile.ps1
-D:\Windows.old\WINDOWS\SysWOW64\WindowsPowerShell\v1.0\Examples\profile.ps1
-D:\Windows.old\WINDOWS\System32\WindowsPowerShell\v1.0\Examples\profile.ps1
+D:\Project Shelf\XmlEditing\XmlEditing.code-workspace
+D:\Users\crbk01\.DataGrip2019.3\config\projects\XlsEdit-UsingVscode\wscode project.code-workspace
+D:\.DataGrip2019.1\config\projects\XlsEdit-UsingVscode\wscode project.code-workspace
+C:\Users\crbk01\Desktop\AutoHotkey\projects\XlsEdit-UsingVscode\wscode project.code-workspace
+C:\Users\crbk01\Desktop\AutoHotkey\projects\XlsEdit-UsingVscode\wscode project.code-workspace
+C:\Users\crbk01\.DataGrip2019.3\config\projects\XlsEdit-UsingVscode\wscode project.code-workspace
+D:\DatagripRecoveredFiles\Vyer_2.code-workspace
+D:\DatagripRecoveredFiles\Vyer_1.code-workspace
+D:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\projects\Geosecma-Solen-Visoin-Vyer\Sol-vision\Vyer.code-workspace
+D:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\projects\Geosecma-Solen-Visoin-Vyer\Innan Databas övergång gamlla vyer\Vyer.code-workspace
+D:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\projects\Geosecma-Solen-Visoin-Vyer\Vyer.code-workspace
+D:\Users\crbk01\.DataGrip2019.3\config\projects\Solen-Visoin-Vyer\Vyer.code-workspace
+D:\DatagripRecoveredFiles\Vyer.code-workspace
+C:\Users\crbk01\Desktop\AutoHotkey\projects\Geosecma-Solen-Visoin-Vyer\Vyer.code-workspace
+C:\Users\crbk01\Desktop\AutoHotkey\projects\Geosecma-Solen-Visoin-Vyer\Vyer.code-workspace
+C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\projects\Geosecma-Solen-Visoin-Vyer\Sol-vision\Vyer.code-workspace
+C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\projects\Geosecma-Solen-Visoin-Vyer\Innan Databas övergång gamlla vyer\Vyer.code-workspace
+C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\projects\Geosecma-Solen-Visoin-Vyer\Vyer.code-workspace
+C:\Users\crbk01\.DataGrip2019.3\config\projects\Solen-Visoin-Vyer\Vyer.code-workspace
+D:\DatagripRecoveredFiles\vsWorkspace_2.code-workspace
+D:\DatagripRecoveredFiles\vsWorkspace_1.code-workspace
+D:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\projects\Livsmedel-DbRensning\vsWorkspace.code-workspace
+D:\DatagripRecoveredFiles\vsWorkspace.code-workspace
+C:\Users\crbk01\Desktop\AutoHotkey\projects\Livsmedel-DbRensning-Dev\vsWorkspace.code-workspace
+C:\Users\crbk01\Desktop\AutoHotkey\projects\Livsmedel-DbRensning-Dev\vsWorkspace.code-workspace
+C:\Users\crbk01\Desktop\AutoHotkey\projects\Livsmedel-DbRensning\vsWorkspace.code-workspace
+C:\Users\crbk01\Desktop\AutoHotkey\projects\Livsmedel-DbRensning\vsWorkspace.code-workspace
+C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\projects\Livsmedel-DbRensning\vsWorkspace.code-workspace
+D:\Project Shelf\VscodeExtensionConfigurationFolder\VscodeExtensionConfigurationFolder.code-workspace
+D:\Project Shelf\TextProssessingFolder\TexProcessessing.code-workspace
+D:\DatagripRecoveredFiles\query optimazation_1.code-workspace
+D:\DatagripRecoveredFiles\query optimazation.code-workspace
+C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\5b682ee5-608b-4b16-bdfd-1132a4a5566f\Gis\etc\query optimazation.code-workspace
+C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\5b682ee5-608b-4b16-bdfd-1132a4a5566f\FnrToAdress\query optimazation.code-workspace
+D:\Documents\WindowsPowerShell\Scripts\ps1.code-workspace
+D:\Documents\WindowsPowerShell\ps1.code-workspace
+D:\Project Shelf\PowerShellProjectFolder\powerShellProjectFolder.code-workspace
+D:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\projects\Geosecma-Solen-Visoin-Vyer\Sol-vision\PdfSplit.code-workspace
+D:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\2ca40bb3-aca4-412d-a610-84b4e5da6dbe\TempExcel\PdfSplit.code-workspace
+C:\Users\crbk01\Desktop\AutoHotkey\projects\Kv-Utsökning\VisionH-ndelserToEasyRead\PdfSplit.code-workspace
+C:\Users\crbk01\Desktop\AutoHotkey\projects\Kv-Utsökning\VisionH-ndelserToEasyRead\PdfSplit.code-workspace
+C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\projects\Geosecma-Solen-Visoin-Vyer\Sol-vision\PdfSplit.code-workspace
+C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\8cc23256-e02c-43ea-8477-e740c4580b62\UpdateHandelser\VisionH-ndelserToEasyRead\PdfSplit.code-workspace
+C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\8cc23256-e02c-43ea-8477-e740c4580b62\Sol-Vision\PdfSplit.code-workspace
+C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\2ca40bb3-aca4-412d-a610-84b4e5da6dbe\TempExcel\PdfSplit.code-workspace
+D:\Project Shelf\NoteTakingProjectFolder\NoteTaking.code-workspace
+D:\Users\crbk01\.vscode\.vscode\extensions\dendron.dendron-markdown-preview-enhanced-0.10.57\node_modules\mdast-builder\mdast-builder.code-workspace
+C:\Users\crbk01\.vscode\extensions\dendron.dendron-markdown-preview-enhanced-0.10.57\node_modules\mdast-builder\mdast-builder.code-workspace
+D:\.DataGrip2019.1\config\consoles\db\5882e465-e263-4e07-aa61-408039213789\FFxSqlite-workspace.code-workspace
+D:\Users\crbk01\.vscode\.vscode\extensions\.dd393137-7823-4fe8-b343-643a23ce3880\extension-dev.code-workspace
+C:\Users\crbk01\.vscode\extensions\.dd393137-7823-4fe8-b343-643a23ce3880\extension-dev.code-workspace
+D:\PortableApps\2. file Organization\PortableApps\Everything\Everything.code-workspace
+D:\Users\crbk01\.vscode\.vscode\extensions\dendron.dendron-markdown-preview-enhanced-0.10.57\dendron.code-workspace
+D:\Users\crbk01\.vscode\.vscode\extensions\.d1736fe8-cb1a-4a2d-9967-01288913e83c\dendron.code-workspace
+C:\Users\crbk01\Dendron\dendron.code-workspace
+C:\Users\crbk01\Dendron\dendron.code-workspace
+C:\Users\crbk01\.vscode\extensions\dendron.dendron-markdown-preview-enhanced-0.10.57\dendron.code-workspace
+C:\Users\crbk01\.vscode\extensions\.d1736fe8-cb1a-4a2d-9967-01288913e83c\dendron.code-workspace
+D:\.DataGrip2019.1\config\projects\Ditto Db parsing\dbparsing.code-workspace
+C:\Users\crbk01\Desktop\AutoHotkey\projects\Ditto Db parsing\dbparsing.code-workspace
+C:\Users\crbk01\Desktop\AutoHotkey\projects\Ditto Db parsing\dbparsing.code-workspace
+D:\Project Shelf\AhkProjectFolder\AhkProjectFolder.code-workspace

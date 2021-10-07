@@ -3,7 +3,8 @@ cd (Split-Path -Path $MyInvocation.MyCommand.Definition -Parent)
 . .\Forks\7ca47b54d66abde42192471c53bbadcd\checking-for-null.ps1
 . .\Forks\fa4261bf1ff6e47734c2af4ec8c1f6a5\set-Encoding.ps1
 
-
+#todo, flagg, maintain filename, or mostcommon filename,or extension, or checksum
+#hashes as forks?, or paths as forks
 function GitCommitEach{
 
 param
@@ -27,27 +28,29 @@ $params
     
             If( Test-Path -Path $file )
             {
-            
-                Copy-Item $file -Destination $folderPath -Force
-                $fileMeta = (Get-ChildItem $file)      
-                git add $fileMeta.Name
-
-                $message = $fileMeta.FullName + " " 
-                $message = $message + $fileMeta.CreationTime  + " "
-                $message = $message + $fileMeta.LastWriteTime
-                git commit -m $message 
-                try{
                 $hash = ""
+             try{
+                
                 $hash =  (Get-FileHash $file).hash
                 $hash = "$hash"      
                 
-                git tag -a $hash -m $i
+
                 }
                 catch
                 {
                  $hash
                     $hash.GetType().Name
                 }
+                $fileMeta = (Get-ChildItem $file)                  
+                 ( Get-Content -Path $file -raw ) > (join-path -path $folderPath -ChildPath ($hash + $fileMeta.Extension))
+
+                git add ($hash + $fileMeta.Extension)
+
+                $message = $fileMeta.FullName + " " 
+                $message = $message + $fileMeta.CreationTime  + " "
+                $message = $message + $fileMeta.LastWriteTime
+                git commit -m $message 
+                git tag -a $fileMeta.FullName -m $i
                 
                 
             }
@@ -90,7 +93,7 @@ $params
 
 SetEncoding("UTF8")
 
-$csv = get-content -path "D:\Project Shelf\PowerShellProjectFolder\Todo\GeneralSourceCompare\fileList.txt" #-raw
+$csv = get-content -path "D:\Project Shelf\PowerShellProjectFolder\GeneralSourceCompare\fileList.txt" #-raw
 #$csv = import-csv "D:\Project Shelf\PowerShellProjectFolder\Todo\GeneralSourceCompare\fileList.txt"
 #$csv | %{ Test-Path -Path  $_ } 
 GitCommitEach($csv)
