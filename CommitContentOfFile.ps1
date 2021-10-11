@@ -42,15 +42,38 @@ $params
                     $hash.GetType().Name
                 }
                 $fileMeta = (Get-ChildItem $file)                  
-                 ( Get-Content -Path $file -raw ) > (join-path -path $folderPath -ChildPath ($hash + $fileMeta.Extension))
+                
+            
+                         
+           $newDest = ($folderPath + '\' + $hash)
+           If( Test-Path -Path $newDest)
+            {
+                'exsists'
+            }
+            else
+            {
+            
+             try{
+              mkdir $newDest
+               } 
+             catch {$newDest}
+             
 
-                git add ($hash + $fileMeta.Extension)
+            }
+
+            Copy-Item $file -Destination $newDest -Force
+
+           
+                             
+
+
+                git add ($hash + '\' + $fileMeta.Name)
 
                 $message = $fileMeta.FullName + " " 
                 $message = $message + $fileMeta.CreationTime  + " "
                 $message = $message + $fileMeta.LastWriteTime
                 git commit -m $message 
-                git tag -a $fileMeta.FullName -m $i
+                git tag -a $fileMeta.BaseName -m $i
                 
                 
             }
