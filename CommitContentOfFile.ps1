@@ -1,3 +1,5 @@
+#loadDependensies
+
 Set-Location (Split-Path -Path $MyInvocation.MyCommand.Definition -Parent)
 . .\Forks\0cc040af9e7d768f13c998cde8dc414d\temporary-directory.ps1
 . .\Forks\7ca47b54d66abde42192471c53bbadcd\checking-for-null.ps1
@@ -63,24 +65,24 @@ function GitCommitEach{
     }
         else {
             
-        $params.count
-        $params.length
-        $params.GetType().Name
+            $params.count
+            $params.length
+            $params.GetType().Name
 
-        "emptyParams"
+            "emptyParams"
         
-        $params[0];
+            $params[0];
         "<>"
-        $params[1]
+            $params[1]
         "<>"
-        $params
+            $params
         }
 
         }
         catch
         {
-        $e 
-        $file
+            $e 
+            $file
         }
 
         finally {        ii $folderPath}
@@ -93,10 +95,8 @@ function GitCommitEach{
 
 SetEncoding("UTF8")
 
-$csv = get-content -path "D:\Project Shelf\PowerShellProjectFolder\GeneralSourceCompare\fileList.txt" #-raw
-#$csv = import-csv "D:\Project Shelf\PowerShellProjectFolder\Todo\GeneralSourceCompare\fileList.txt"
-#$csv | %{ Test-Path -Path  $_ } 
+$csv = get-content -path "D:\Project Shelf\PowerShellProjectFolder\git\GeneralSourceCompare\fileList.txt" #-raw
+
 GitCommitEach($csv)
 
-#$csv | %{If( Test-Path -Path $_ ){$_}} 
 
