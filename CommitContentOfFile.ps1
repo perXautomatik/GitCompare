@@ -95,8 +95,7 @@ function GitCommitEach{
 
 SetEncoding("UTF8")
 
-#$csv = Get-ChildItem -Path "C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\49f168c8-015c-43d2-b9f4-06de275bdc15\Pseudo\Updatera" | Select-Object -Property fullName
-$csv = get-content -path "D:\Project Shelf\PowerShellProjectFolder\Scripts\git\GeneralSourceCompare\fileList.txt" #-raw
+$csv = get-content -path "D:\Project Shelf\PowerShellProjectFolder\git\GeneralSourceCompare\fileList.txt" #-raw
 
 GitCommitEach($csv)
 
